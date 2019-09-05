@@ -23,9 +23,9 @@ export const dialog = [
 {
 	"wxid":"fileTransfer",
 	"headurl":imgurl+'robot.jpg',
-	"petname":"机器人聊天",
-	"remarks":"机器人聊天",
-	"newmeassage":"请从通讯录的联系人进入机器人单人聊天",
+	"petname":"臭贤",
+	"remarks":"臭贤",
+	"newmeassage":"欢迎回来",
 	"sendobject":1,
 },
 ]

@@ -6,6 +6,10 @@ import './style/public.scss'
 import './config/rem'
 import FastClick from 'fastclick'
 import App from './app.vue';
+import axios from 'axios';
+import QS from 'qs'; //用来解决vue中post请求(详情)
+Vue.prototype.$axios = axios;
+Vue.prototype.qs = QS;
 if ('addEventListener' in document) {
 	document.addEventListener('DOMContentLoaded', function() {
 		FastClick.attach(document.body);

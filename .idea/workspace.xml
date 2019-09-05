@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ff965971-2f68-477b-acab-137386f5808c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vue-ad.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/aboutwc.721465e1a58ca5fae5fd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/addressbook.6e6d67af12d05ef06298.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/asset/images/2196b1823bcc03b7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/asset/images/7c6e0a7a2137aa49.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/cardbag.267fca2ca29393cbd5eb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/chat.1fa037fc70b8140383b4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/chatmessage.ee66db24365a790f2fbb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/collect.8cce8d6473918997bba4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/computer.fc1e7f5277bb0d77e8a9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/currency.cd51f55371e375da12f4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/default~addressbook~computer~dialogue~find~me~transfer.329aa577c38b0870be87.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/default~groupchat~singlechat.a10cd5d287acebc37ce6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/details.3852593afb156ad99348.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/dialogue.5f2fc206053424c3bd99.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/disturbance.d3bafcc146039bc8ee52.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/find.15f0ca07825485411723.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/friendcircle.fcb26b130ca4112ad926.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/groupchat.f3cbc15b9eea7a6ba7f5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/groupchatmessage.87bfb27c8d512d7348e5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/help.a492fb5aece13f0cce38.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/index.8271da493f1c5e7577f7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/login.177dda5c0bda71a637fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/me.8561a9e30527c8aae8b6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/miniapps.33edbc88ba7e1986afaf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/more.2ed4297e5f980faad3e7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/newmessage.fb6303d9b292c44f3e41.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/personaldetails.4bec68ee0db2c1e5ff16.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/photoalbum.8ee6fb65722839bc3852.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/privacy.89ba9b649c041110ca86.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/search.d3671db52feb31764c08.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/settings.dec95f669a0bf309d16f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/singlechat.08565640b94bc9bd5af2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/transfer.440c96ae7df1fe258e18.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/vendors/library.55db9216b4fb48b4e9dd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/vendors/manifest.3acf7c1fe9fb9f24ddb2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/vendors/vue-bucket.1e5bfd5bb732421a4bb9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/static/wallet.fcf1d3c89814fd4d555f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/https.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/A君.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/D君.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frames/conversation/singlechat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/frames/conversation/singlechat.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/data/dialoglist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/data/dialoglist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/service/getData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/service/getData.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1QMlToPKFO3Pwf6FU4BJYzhPk1o" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Project\AD\vue-ad\static" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="App.vue" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue-ad/src/App.vue" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.App.vue" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff965971-2f68-477b-acab-137386f5808c" name="Default Changelist" comment="" />
+      <created>1567588356877</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1567588356877</updated>
+      <workItem from="1567588358277" duration="9507000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

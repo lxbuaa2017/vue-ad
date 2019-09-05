@@ -15,10 +15,12 @@
   },
   "dependencies": {
     "amfe-flexible": "^2.2.1",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "babel-runtime": "^6.26.0",
     "mint-ui": "^2.2.13",
+    "qs": "^6.8.0",
     "vue": "^2.5.2",
+    "vue-axios": "^2.1.4",
     "vue-router": "^3.0.1",
     "vue2-hammer": "^2.0.1",
     "vuex": "^3.1.0"

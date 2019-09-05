@@ -5,26 +5,27 @@
 				<router-link to='/singlechat/chatmessage' class="person_link">
 					<svg fill="#fff" class="icon-search">
 					    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#person"></use>
-					</svg>	
+					</svg>
 				</router-link>
 			</section>
 		</head-top>
 		<section class="coversation" ref="singleHeight">
 			<section class="coversationlist" @click="bottomHide">
-				<div class="underscore">————&nbsp;我是机器人小辰，现在我们可以聊天了&nbsp;————</div>
+				<div class="underscore">————&nbsp;回来就好————</div>
 				<ul>
 					<!-- 对方 -->
 					<li v-for="item in conversine">
-						<div class="other" :class="{mysay : item.sendobject !== 1 }">
-							<img :src="item.headurl" alt="" @click="enlargeImg(item.headurl)">
-							<div class="whatsay">
+						<div class="other" :class="{mysay : item.send !== true }">
+							<img v-if="item.send===true" src="../../../static/A君.jpg" alt="" @click="enlargeImg(item.headurl)">
+              <img v-else src="../../../static/D君.jpg" alt="" @click="enlargeImg(item.headurl)">
+              <div class="whatsay">
 								<div class="whatsay_svg">
 									<svg>
-										<use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href="item.sendobject !== 1 ? '#trigon-right' : '#trigon-left'"></use>
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" :xlink:href=" item.send !== true ? '#trigon-right' : '#trigon-left'"></use>
 									</svg>
 								</div>
 								<div class="whatsay_text">
-									{{item.Messageblob}}
+									{{item.content}}
 								</div>
 							</div>
 						</div>
@@ -93,11 +94,11 @@
 	import {mapState, mapActions,} from 'vuex';
 	import {userWord, chatData} from 'src/service/getData'
 	import {imgurl} from 'src/config/env';
-	import 'src/config/swiper.min.js' 
+	import 'src/config/swiper.min.js'
 	import 'src/style/swiper.min.css'
 	import fetch from 'src/config/fetch'
-
-	export default{ 
+  import https from 'src/https.js'
+  export default{
 		data(){
 			return{
 				inputmessage:'',//输入的文本内容
@@ -133,9 +134,10 @@
 			this.chatname=this.infor.remarks ? this.infor.remarks : this.infor.petname;
 			this.getUserInfo();
 			this.userInfoData=this.userInfo
-			userWord().then((res) => {
-				//this.conversine=[...res]
-			});	
+        var self=this
+			this.$axios.get('http://localhost:8081/api/findByTime?time=2019-05-29').then((res)=>{
+          self.conversine=res.data
+      })
 		},
 		components:{
 			headTop,
@@ -144,7 +146,7 @@
 			...mapState([
 			    "infor", "userInfo",
 			]),
-			
+
 		},
 		beforeDestroy(){
             clearTimeout(this.timer);
@@ -204,7 +206,7 @@
 						throw new Error(res)
 					}
 				}catch(err){
-					alert('获取机器人聊天信息失败', err);
+					//alert('获取机器人聊天信息失败', err);
 				}
 			},
 			enlargeImg(enlargeImg){
@@ -247,7 +249,7 @@
 	}
 	.coversation{
 		background-color: #ebebeb;
-		-webkit-overflow-scrolling: touch; 
+		-webkit-overflow-scrolling: touch;
 		padding-top: 2.06933rem;
 		.coversationlist{
 			position: relative;
@@ -263,8 +265,8 @@
 				padding-top:.4rem;
 				padding-bottom:2.2rem;
 				width:15.4rem;
-				overflow-scrolling: touch; 
-				-webkit-overflow-scrolling: touch; 
+				overflow-scrolling: touch;
+				-webkit-overflow-scrolling: touch;
 				top:0;
 				li{
 					.other{
@@ -289,7 +291,7 @@
 									@include widthHeight(0.4266666667rem,0.64rem);
 								}
 							}
-							
+
 							.whatsay_text{
 								margin-left:0.6399997rem;
 								max-width:10.3253333333rem;
@@ -302,7 +304,7 @@
 								word-break: break-all;
 							}
 						}
-						
+
 					}
 					.mysay{
 						display:flex;
@@ -321,7 +323,7 @@
 					}
 				}
 			}
-			
+
 		}
 	}
 	footer{
