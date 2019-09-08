@@ -1,4 +1,4 @@
-<template>
+<template xmlns:overflow="http://www.w3.org/1999/xhtml">
 	<section>
 		<head-top :crossover="chatname">
 			<section class="coversPart" slot="person">
@@ -10,12 +10,14 @@
 			</section>
 		</head-top>
 		<section class="coversation" ref="singleHeight">
-			<section class="coversationlist" @click="bottomHide">
-				<div class="underscore">————&nbsp;回来就好————</div>
-				<ul>
+			<section class="coversationlist" ref="coversationlist">
+<!--        @click="bottomHide"-->
+<!--				<div class="underscore">————&nbsp;回来就好————</div>-->
+
+				<ul class="chatMain" ref="chatMain" overflow:auto>
 					<!-- 对方 -->
 					<li v-for="item in conversine">
-						<div class="other" :class="{mysay : item.send !== true }">
+						<div  class="other" :class="{mysay : item.send !== true }">
 							<img v-if="item.send===true" src="../../../static/A君.jpg" alt="" @click="enlargeImg(item.headurl)">
               <img v-else src="../../../static/D君.jpg" alt="" @click="enlargeImg(item.headurl)">
               <div class="whatsay">
@@ -31,6 +33,7 @@
 						</div>
 					</li>
 				</ul>
+
 			</section>
 		</section>
 		<footer :class=" {footshow : clickmore}">
@@ -89,7 +92,7 @@
 
 </template>
 
-<script>
+<script defer=true>
 	import headTop from 'src/components/header/head';
 	import {mapState, mapActions,} from 'vuex';
 	import {userWord, chatData} from 'src/service/getData'
@@ -101,6 +104,10 @@
   export default{
 		data(){
 			return{
+			    timer: '',
+			    sw:true,
+			    ul:null,
+          start:0,
 				inputmessage:'',//输入的文本内容
 				light:false,	//输入框不为空时，input下边框变色
 				clickmore:false,	//点击加号底部显示、隐藏
@@ -119,9 +126,42 @@
 			}
 		},
 		created(){
-
 		},
+      beforeDestroy() {
+          clearInterval(this.timer);
+      },
 		mounted(){
+
+       // this.ul=document.getElementById("msg_ul")
+        this.start=0
+        // this.$axios.get('http://localhost:8081/api/load?page='+this.start).then((res)=>{
+        //     //self.conversine.push(res.data)
+        //     self.conversine=res.data
+        //     self.start++
+        // })
+        let self=this
+        this.$axios.get('http://localhost:8081/api/load?page=' + this.start).then((res) => {
+            self.conversine=res.data
+            self.start++
+        })
+        this.timer = setInterval(this.loadMore, 300000)
+        document.documentElement.scrollTop=this.$refs.coversationlist.scrollHeight
+        window.addEventListener('scroll',function () {
+           // console.log('现在 '+document.documentElement.scrollTop)
+           //  console.log(window.innerHeight)
+           //  console.log(document.body.offsetHeight)
+
+            // if(document.documentElement.scrollTop + window.innerHeight >= document.body.offsetHeight){
+            //     if(this.sw===true) {
+            //         this.sw=false
+            //         this.$axios.get('http://localhost:8081/api/load?page=' + this.start).then((res) => {
+            //             self.conversine.push(res.data)
+            //             self.start++
+            //         })
+            //         this.sw=true
+            //     }
+            // }
+        })
 		    chatData().then((res) => {
 		    	this.chatData=res;
 		    }).then(()=>{
@@ -133,11 +173,9 @@
 		    })
 			this.chatname=this.infor.remarks ? this.infor.remarks : this.infor.petname;
 			this.getUserInfo();
-			this.userInfoData=this.userInfo
-        var self=this
-			this.$axios.get('http://localhost:8081/api/findByTime?time=2019-05-29').then((res)=>{
-          self.conversine=res.data
-      })
+			this.userInfoData=this.userInfo;
+			// window.addEventListener('scroll',this.scroll,true);
+      // this.scroll();
 		},
 		components:{
 			headTop,
@@ -152,16 +190,46 @@
             clearTimeout(this.timer);
         },
 		methods:{
+		    loadMore(){
+		        console.log('啊')
+		        let self=this
+            this.start++
+            this.$axios.get('http://localhost:8081/api/load?page=' + this.start).then((res) => {
+                self.conversine=self.conversine.concat(res.data)
+            })
+        },
 			...mapActions([
                 'getUserInfo',
             ]),
-			whatInput(){
+//         scrollToBottom () {
+//             this.$nextTick(() => {
+//                 setTimeout(() => {
+//                     console.log(this.$refs.singleHeight.scrollTop)
+//                     console.log(this.$refs.singleHeight.scrollHeight)
+//                     this.$refs.singleHeight.scrollTop=this.$refs.singleHeight.scrollHeight
+//                     console.log(this.$refs.singleHeight.scrollTop)
+//                 }, 13)
+//             })
+//         }
+// ,
+        whatInput(){
 				if(this.inputmessage.replace(/\s+/g, "") == ''){
 					this.light=false;
 				}else{
 					this.light=true;
 				}
 			},
+        // scroll() {
+        //
+        //     if(ul.scrollHeight-ul.scrollTop<200){
+        //         var self=this
+        //         this.$axios.get('http://localhost:8081/api/load?page=0').then((res)=>{
+        //             //self.conversine.push(res.data)
+        //             self.conversine=res.data
+        //             self.start++
+        //         })
+        //     }
+        // },
 			enterThing(){
 				if(this.light){
 					this.clickSend()

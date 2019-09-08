@@ -17,6 +17,7 @@
     "amfe-flexible": "^2.2.1",
     "axios": "^0.18.1",
     "babel-runtime": "^6.26.0",
+    "better-scroll": "^1.15.2",
     "mint-ui": "^2.2.13",
     "qs": "^6.8.0",
     "vue": "^2.5.2",
