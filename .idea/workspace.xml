@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff965971-2f68-477b-acab-137386f5808c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frames/conversation/singlechat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/frames/conversation/singlechat.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -73,7 +72,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567588356877</updated>
       <workItem from="1567588358277" duration="17827000" />
-      <workItem from="1567850792244" duration="13626000" />
+      <workItem from="1567850792244" duration="14182000" />
     </task>
     <task id="LOCAL-00001" summary="完成了界面demo展示">
       <created>1567689359052</created>
@@ -96,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567919865932</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成了消息加载">
+      <created>1567946137896</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1567946137896</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

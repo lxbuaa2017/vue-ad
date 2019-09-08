@@ -140,7 +140,7 @@
         //     self.start++
         // })
         let self=this
-        this.$axios.get('http://localhost:8081/api/load?page=' + this.start).then((res) => {
+        this.$axios.get('/api/load?page=' + this.start).then((res) => { //http://localhost:8081
             self.conversine=res.data
         })
         this.timer = setInterval(this.loadMore, 30000)
@@ -193,7 +193,7 @@
 		        console.log('啊')
 		        let self=this
             this.start--
-            this.$axios.get('http://localhost:8081/api/load?page=' + this.start).then((res) => {
+            this.$axios.get('/api/load?page=' + this.start).then((res) => {  //http://localhost:8081
                 self.conversine=self.conversine.concat(res.data)
             })
         },
