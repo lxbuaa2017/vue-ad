@@ -107,7 +107,7 @@
 			    timer: '',
 			    sw:true,
 			    ul:null,
-          start:0,
+          start:1000,
 				inputmessage:'',//输入的文本内容
 				light:false,	//输入框不为空时，input下边框变色
 				clickmore:false,	//点击加号底部显示、隐藏
@@ -133,7 +133,7 @@
 		mounted(){
 
        // this.ul=document.getElementById("msg_ul")
-        this.start=0
+        this.start=1000
         // this.$axios.get('http://localhost:8081/api/load?page='+this.start).then((res)=>{
         //     //self.conversine.push(res.data)
         //     self.conversine=res.data
@@ -142,7 +142,7 @@
         let self=this
         this.$axios.get('http://localhost:8081/api/load?page=' + this.start).then((res) => {
             self.conversine=res.data
-            self.start++
+            self.start--
         })
         this.timer = setInterval(this.loadMore, 300000)
         document.documentElement.scrollTop=this.$refs.coversationlist.scrollHeight
@@ -193,7 +193,7 @@
 		    loadMore(){
 		        console.log('啊')
 		        let self=this
-            this.start++
+            this.start--
             this.$axios.get('http://localhost:8081/api/load?page=' + this.start).then((res) => {
                 self.conversine=self.conversine.concat(res.data)
             })
