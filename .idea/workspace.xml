@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff965971-2f68-477b-acab-137386f5808c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frames/conversation/singlechat.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/frames/conversation/singlechat.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1567588356877</updated>
       <workItem from="1567588358277" duration="17827000" />
-      <workItem from="1567850792244" duration="12420000" />
+      <workItem from="1567850792244" duration="13626000" />
     </task>
     <task id="LOCAL-00001" summary="完成了界面demo展示">
       <created>1567689359052</created>
@@ -84,7 +82,21 @@
       <option name="project" value="LOCAL" />
       <updated>1567689359052</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成了消息加载">
+      <created>1567919733038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1567919733038</updated>
+    </task>
+    <task id="LOCAL-00003" summary="完成了消息加载">
+      <created>1567919865932</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1567919865932</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="完成了界面demo展示" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了界面demo展示" />
+    <MESSAGE value="完成了消息加载" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了消息加载" />
   </component>
 </project>
